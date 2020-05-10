@@ -28,7 +28,7 @@ BEGIN_MESSAGE_MAP(CEX4_3View, CView)
 	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CView::OnFilePrintPreview)
 	ON_WM_LBUTTONDOWN()
 	ON_WM_RBUTTONDOWN()
-	ON_COMMAND(ID_SHOWMUNBER, &CEX4_3View::OnShowmunber)
+//	ON_COMMAND(ID_SHOWMUNBER, &CEX4_3View::OnShowmunber)
 END_MESSAGE_MAP()
 
 // CEX4_3View 构造/析构
@@ -115,20 +115,23 @@ void CEX4_3View::OnLButtonDown(UINT nFlags, CPoint point)
 {
 	// TODO: 在此添加消息处理程序代码和/或调用默认值
 	CEX4_3Doc* pDoc = GetDocument();
-	
+	pDoc->a = rand() % 20 + 5;
+	pDoc->b = rand() % 20 + 10;
+	m = pDoc->a;
+	n = pDoc->b;
 	CString a, b, s;
 	a.Format(_T("%d"), pDoc->a);
 	b.Format(_T("%d"), pDoc->b);
 	s = _T("点击无效");
 	CClientDC dc(this);
-	if (point.x > pDoc->A.left & point.x<pDoc->A.right & point.y>pDoc->A.top & point.y < pDoc->A.bottom)
+	if (point.x > pDoc->A.left && point.x<pDoc->A.right && point.y>pDoc->A.top && point.y < pDoc->A.bottom)
 		dc.TextOutW(150, 125, a);
 	else
-		if (point.x > pDoc->B.left & point.x<pDoc->B.right & point.y>pDoc->B.top & point.y < pDoc->B.bottom)
+		if (point.x > pDoc->B.left && point.x<pDoc->B.right && point.y>pDoc->B.top && point.y < pDoc->B.bottom)
 			dc.TextOutW(250, 125, b);
 		else
 			dc.TextOutW(400,200,s);
-	this->Invalidate();
+	
 
 	CView::OnLButtonDown(nFlags, point);
 }
@@ -139,19 +142,14 @@ void CEX4_3View::OnRButtonDown(UINT nFlags, CPoint point)
 	// TODO: 在此添加消息处理程序代码和/或调用默认值
 	CEX4_3Doc* pDoc = GetDocument();
 	CString c;
-	c.Format(_T("%d"), pDoc->a + pDoc->b);
+	c.Format(_T("%d"), m + n);
 	CClientDC dc(this);
-	if (point.x > pDoc->C.left & point.x<pDoc->C.right & point.y>pDoc->C.top & point.y < pDoc->C.bottom)
+	if (point.x > pDoc->C.left && point.x<pDoc->C.right && point.y>pDoc->C.top && point.y < pDoc->C.bottom)
 		dc.TextOutW(350,125,c);
 
 	CView::OnRButtonDown(nFlags, point);
 }
 
 
-void CEX4_3View::OnShowmunber()
-{
-	// TODO: 在此添加命令处理程序代码
-	CString s = _T("201812300081");
-	CClientDC dc(this);
-	dc.TextOutW(200,200,s);
-}
+
+

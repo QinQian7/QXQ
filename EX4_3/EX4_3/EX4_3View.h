@@ -17,6 +17,7 @@ public:
 
 // 操作
 public:
+	int m, n;
 
 // 重写
 public:
@@ -43,7 +44,7 @@ protected:
 public:
 	afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
 	afx_msg void OnRButtonDown(UINT nFlags, CPoint point);
-	afx_msg void OnShowmunber();
+//	afx_msg void OnShowmunber();
 };
 
 #ifndef _DEBUG  // EX4_3View.cpp 中的调试版本

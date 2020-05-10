@@ -33,8 +33,7 @@ CEX4_3Doc::CEX4_3Doc()
 	A.left = 100; A.top = 100; A.right = 200; A.bottom = 150;
 	B.left = 200; B.top = 100; B.right = 300; B.bottom = 150;
 	C.left = 300; C.top = 100; C.right = 400; C.bottom = 150;
-	a = rand() % 20 + 5;
-	b = rand() % 20 + 10;
+	
 
 }
 
