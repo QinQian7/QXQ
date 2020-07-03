@@ -1,0 +1,18 @@
+﻿生成启动时间为 2020/7/3 22:33:47。
+     1>项目“C:\Users\Qian_X\OneDrive\文档\Visual Studio 2015\Projects\EX11_2\EX11_2\EX11_2.vcxproj”在节点 2 上(Build 个目标)。
+     1>ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\EX11_2.res" EX11_2.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Qian_X\OneDrive\文档\Visual Studio 2015\Projects\EX11_2\Debug\EX11_2.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Include\Manifest\dpiaware.manifest" /Debug /PDB:"C:\Users\Qian_X\OneDrive\文档\Visual Studio 2015\Projects\EX11_2\Debug\EX11_2.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Qian_X\OneDrive\文档\Visual Studio 2015\Projects\EX11_2\Debug\EX11_2.lib" /MACHINE:X86 Debug\EX11_2.res
+         Debug\Change.obj
+         Debug\EX11_2.obj
+         Debug\EX11_2Doc.obj
+         Debug\EX11_2View.obj
+         Debug\MainFrm.obj
+         Debug\stdafx.obj
+         EX11_2.vcxproj -> C:\Users\Qian_X\OneDrive\文档\Visual Studio 2015\Projects\EX11_2\Debug\EX11_2.exe
+     1>已完成生成项目“C:\Users\Qian_X\OneDrive\文档\Visual Studio 2015\Projects\EX11_2\EX11_2\EX11_2.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:00.45
